@@ -55,8 +55,7 @@ public class PastelRicoSolver {
       // Se llegó al límite de ingredientes en el pastel. Se chequea si el pastel es rico.
 
       if (checkSolution()) {
-        // El pastel es rico. Se calcula su hash para chequear que 
-        // no esté en el set de soluciones distintas ya encontradas
+        // El pastel es rico. Se calcula su hash del mismo
         long pastelHash = calcPastelHash();
 
         // No importa si la solución es nueva o duplicada, como agregamos  
