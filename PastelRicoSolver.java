@@ -3,9 +3,9 @@ import java.util.Set;
 
 /**
  * El algoritmo consiste básicamente de un método recursivo, que examina todas las combinaciones de 9 ingredientes
- * que conforman el pastel de un total de 10. A cada ingrediente le asigna un valor entero distinto, siendo el 
- * Dulce=1, Fruta=2, Confite=3 y Masita=4. Como se repiten los ingredientes, las combinaciones obtenidas pueden dar 
- * pasteles iguales. Para asegurarnos que las soluciones sean distintas, cuando se consigue un pastel rico se calcula
+ * que conforman el pastel de un total de 10 (importando el orden). A cada ingrediente le asigna un valor entero distinto, 
+ * siendo el Dulce=1, Fruta=2, Confite=3 y Masita=4. Como se repiten los ingredientes, las combinaciones obtenidas pueden 
+ * dar pasteles iguales. Para asegurarnos que las soluciones sean distintas, cuando se consigue un pastel rico se calcula
  * un hash o identificador del mismo de tipo entero. Este hash es simplemente la representación numérica en base 10 de 
  * los 9 ingredientes del pastel. Una vez calculado el hash del pastel rico, se guarda en un Set, el cual nos garantiza 
  * que las soluciones allí encontradas al final del algoritmo serán únicas.
